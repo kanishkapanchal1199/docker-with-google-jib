@@ -19,9 +19,11 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
+      - name: Grant execute permission to mvnw
+        run: chmod +x mvnw
+
       - name: Build JAR
-        run: |
-          ./mvnw clean install
+        run: ./mvnw clean install
 
       - name: Build and Push Docker Image
         run: |
