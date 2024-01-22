@@ -43,6 +43,7 @@
 					<to>
 						<image>registry.hub.docker.com/kpanchal11/google-jib-image-example</image>
 					</to>
+					<authMethod>envVar</authMethod>
 				</configuration>
 			</plugin>
 		</plugins>
